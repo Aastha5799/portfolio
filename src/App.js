@@ -26,7 +26,7 @@ function App() {
         <img src={profileImg} alt="Aastha Mainali" className="profile-img" />
         <h1>Hello, I'm <span>Aastha Mainali</span></h1>
         <p>Computer Engineering Student</p>
-        <p>Frontend Developer & Data Science Enthusiast</p>
+        <p>Passionate about web development and data science.</p>
         <a href="#contact" className="btn">Contact Me</a>
       </header>
 
@@ -59,21 +59,93 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects">
-        <h2>Projects</h2>
+      <section id="projects" className="projects-section">
+        <h2 className="section-title">Projects</h2>
+        <p className="section-subtitle">
+          Here are some of the projects I’ve built using modern technologies 
+          in full-stack development and machine learning.
+        </p>
+
         <div className="projects-container">
+
+          {/* Project 1 */}
           <div className="project-card">
-            <h3>Mini ecommerce Website</h3>
-            <p>A simple and responsive mini ecommerce website built with React as frontend and Django as backend components.</p>
+            <h3>🛒 Mini E-commerce Platform</h3>
+            <p>
+              A full-stack e-commerce application built using 
+              <strong> React.js </strong> for the frontend and 
+              <strong> Django REST Framework </strong> for the backend.
+              Includes authentication, product listing, cart system,
+              and API integration.
+            </p>
+
+            <div className="tech-stack">
+              <span>React</span>
+              <span>Django</span>
+              <span>REST API</span>
+            </div>
+
+            <a
+              href="https://github.com/Aastha5799/mini_e-commerce_web_app.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-btn"
+            >
+              🔗 View Code
+            </a>
           </div>
+
+          {/* Project 2 */}
           <div className="project-card">
-            <h3>False news detection</h3>
-            <p>A machine learning project to detect false news- data science.</p>
+            <h3>📰 Fake News Detection System</h3>
+            <p>
+              A machine learning model that detects fake news using 
+              NLP techniques. Implemented data preprocessing, 
+              TF-IDF vectorization, and classification models 
+              to improve prediction accuracy.
+            </p>
+
+            <div className="tech-stack">
+              <span>Python</span>
+              <span>Scikit-Learn</span>
+              <span>NLP</span>
+            </div>
+
+            <a
+              href="https://github.com/Aastha5799/Fake_news_detection_datascience.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-btn"
+            >
+              🔗 View Code
+            </a>
           </div>
+
+          {/* Project 3 */}
           <div className="project-card">
-            <h3>To-do List</h3>
-            <p>A simple and responsive to-do list application built with Django.</p>
+            <h3>✅ To-Do List Application</h3>
+            <p>
+              A task management application built with Django. 
+              Supports CRUD operations, authentication, 
+              and database integration with a clean UI.
+            </p>
+
+            <div className="tech-stack">
+              <span>Django</span>
+              <span>SQLite</span>
+              <span>CRUD</span>
+            </div>
+
+            <a
+              href="https://github.com/Aastha5799/TO-DO-LIST_DJANGO_PROJECT.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-btn"
+            >
+              🔗 View Code
+            </a>
           </div>
+
         </div>
       </section>
 
